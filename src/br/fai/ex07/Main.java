@@ -32,6 +32,11 @@ public class Main {
 	}
 	
 	private void calculaArray(String lista[]) {
-		System.out.println("String concatenada: " + lista[0].concat(lista[1]));
+		String concatenado = "";
+		for (String item: lista) {
+			concatenado += item;
+		}
+		
+		System.out.println("Palavra concatenada: " + concatenado);
 	}
 }
